@@ -7,8 +7,16 @@
             var c_kac;
             var a_kac=parseFloat(m_kac);
             var b_kac=parseFloat(n_kac);
-            c_kac=(a_kac*a_kac*a_kac)+3*(a_kac*a_kac*a_kac)*b_kac+3*a_kac*(b_kac*b_kac)+(b_kac*b_kac*b_kac);
-            document.write("("+a_kac+" + "+b_kac+")^3="+a_kac+^3"  + 3*(("+a_kac+")^"+b_kac+")*()"+b_kac+" + 3*("+a_kac+"<br>");
+            var e_kac;
+            var f_kac;
+            var g_kac;
+            var i_kac;
+            e_kac=(a_kac*a_kac*a_kac);
+            f_kac=3*(a_kac*a_kac)*b_kac;
+            g_kac=3*a_kac*(b_kac*b_kac);
+            i_kac=(b_kac*b_kac*b_kac);
+            c_kac=(a_kac*a_kac*a_kac)+3*(a_kac*a_kac)*b_kac+3*a_kac*(b_kac*b_kac)+(b_kac*b_kac*b_kac);
+            document.write("("+a_kac+" + "+b_kac+")^3="+a_kac+"^3  + 3*(("+a_kac+")^"+b_kac+")*()"+b_kac+" + 3*("+a_kac+")*(("+b_kac+")^2) +"+b_kac+"^3 ="+e_kac+" + "+f_kac+" + "+g_kac+" + "+i_kac+" = "+c_kac+"<br>");
 
 
 function okno_zamknij_kaczorowski()  
