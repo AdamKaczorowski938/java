@@ -1,0 +1,36 @@
+<html>
+<body>
+<textarea cols="220" rows="30">
+<!DOCTYPE html>
+<body>
+    <div style="color:green;font-size:50px;">
+        <script language="JavaScript">
+            var m_kac=prompt("Podaj liczbe A=","");
+            var n_kac=prompt("Podaj liczbe B=","");
+            var c_kac;
+            var a_kac=parseFloat(m_kac);
+            var b_kac=parseFloat(n_kac);
+            var e_kac;
+            var f_kac;
+            var g_kac;
+            var i_kac;
+            e_kac=(a_kac*a_kac*a_kac);
+            f_kac=3*(a_kac*a_kac)*b_kac;
+            g_kac=3*a_kac*(b_kac*b_kac);
+            i_kac=(b_kac*b_kac*b_kac);
+            c_kac=(a_kac*a_kac*a_kac)+3*(a_kac*a_kac)*b_kac+3*a_kac*(b_kac*b_kac)+(b_kac*b_kac*b_kac);
+            document.write("("+a_kac+" + "+b_kac+")^3="+a_kac+"^3  + 3*(("+a_kac+")^"+b_kac+")*()"+b_kac+" + 3*("+a_kac+")*(("+b_kac+")^2) +"+b_kac+"^3 ="+e_kac+" + "+f_kac+" + "+g_kac+" + "+i_kac+" = "+c_kac+"<br>");
+
+
+function okno_zamknij_kaczorowski()  
+                       { 
+                             window.close() 
+                       } 
+            </script>
+                    <input type="button" value="zamknij okno" onclick="okno_zamknij_kaczorowski()"/>
+            </body>
+
+            </html>
+</textarea>
+</body>
+</html>
