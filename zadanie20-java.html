@@ -1,0 +1,49 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function AB_kac() 
+   { 
+var XA_kac= parseFloat(document.getElementById('XA_kac').value); 
+var YA_kac= parseFloat(document.getElementById('YA_kac').value); 
+var XB_kac= parseFloat(document.getElementById('XB_kac').value); 
+var YB_kac= parseFloat(document.getElementById('YB_kac').value); 
+ var wynik= Math.sqrt(Math.pow(XA_kac - XB_kac ,2) + Math.pow(YA_kac - YB_kac,2));
+        document.getElementById("nazwa").innerHTML ="AB= "+wynik.toFixed(2)+" cm^2";  
+   }
+    function BC_kac() 
+   { 
+var XB_kac= parseFloat(document.getElementById('XB_kac').value); 
+var YB_kac= parseFloat(document.getElementById('YB_kac').value); 
+var XC_kac= parseFloat(document.getElementById('XC_kac').value); 
+var YC_kac= parseFloat(document.getElementById('YC_kac').value); 
+ var wynik= Math.sqrt(Math.pow(XB_kac - XC_kac ,2) + Math.pow(YB_kac - YC_kac,2));
+        document.getElementById("nazwa").innerHTML ="BC= "+wynik.toFixed(2)+" cm^2";  
+   } 
+    function AC_kac() 
+   { 
+var XA_kac= parseFloat(document.getElementById('XA_kac').value); 
+var YA_kac= parseFloat(document.getElementById('YA_kac').value); 
+var XC_kac= parseFloat(document.getElementById('XC_kac').value); 
+var YC_kac= parseFloat(document.getElementById('YC_kac').value); 
+ var wynik= Math.sqrt(Math.pow(XA_kac - XC_kac ,2) + Math.pow(YA_kac - YC_kac,2));
+        document.getElementById("nazwa").innerHTML ="AC= "+wynik.toFixed(2)+" cm^2";  
+   } 
+ </script> 
+  <h1>zadanie 20 </h1><br><br> 
+  Podaj punkt XA :  <input type="text" id="XA_kac" value="podaj Punkt"><br> <br> 
+  Podaj punkt YA :  <input type="text" id="YA_kac" value="podaj Punkt""><br> <br> 
+  Podaj punkt XB :  <input type="text" id="XB_kac" value="podaj Punkt""><br> <br> 
+  Podaj punkt YB :  <input type="text" id="YB_kac" value="podaj Punkt""><br> <br> 
+  Podaj punkt XC :  <input type="text" id="XC_kac" value="podaj Punkt""><br> <br> 
+  Podaj punkt YC :  <input type="text" id="YC_kac" value="podaj Punkt""><br> <br> 
+
+  <input type="button" name="pole" value="Oblicz długość" Onclick="AB_kac()"><br><br> 
+  <input type="button" name="pole" value="Oblicz długość" Onclick="BC_kac()"><br><br> 
+  <input type="button" name="pole" value="Oblicz długość" Onclick="AC_kac()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html>
